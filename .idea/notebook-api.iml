@@ -211,9 +211,6 @@
     <entry key="config/locales">
       <value>file://$MODULE_DIR$/config/locales</value>
     </entry>
-    <entry key="config/routes">
-      <value>file://$MODULE_DIR$/config/routes</value>
-    </entry>
     <entry key="config/routes.rb">
       <value>file://$MODULE_DIR$/config/routes.rb</value>
     </entry>
