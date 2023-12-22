@@ -21,6 +21,16 @@ namespace :dev do
       )
     end
     puts "Contacts created with success!"
-  end
 
+
+    puts "Creating phones..."
+    Contact.all.each do |contact|
+      Random.rand(5).times do |i|
+        phone = Phone.create!(number: Faker::PhoneNumber.cell_phone, contact: contact)
+        contact.phones << phone
+        contact.save!
+      end
+    end
+    puts "Phones created with success!"
+  end
 end
